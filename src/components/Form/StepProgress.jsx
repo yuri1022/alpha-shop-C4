@@ -1,6 +1,9 @@
 
-export default function Register(){
-          <section className="progress-container col col-12">
+export default function StepProgress(){
+          <div className="step-progress">
+
+            <section className="progress-container col col-12">
+              <div className="progress-title">結帳</div>
             <span className="progress-group" data-phase="address">
               <span className="progress-icon">
                 <span className="text">1</span>
@@ -22,4 +25,7 @@ export default function Register(){
               <span className="progress-label">付款資訊</span>
             </span>
           </section>
+
+          </div>
+          
 }

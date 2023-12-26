@@ -1,12 +1,12 @@
-import Header from "./components/header";
-// import Mainn from './components/Main/mainn.jsx'
+import MainPage from './components/MainPage.jsx';
+import "./scss_dir/main.scss";
 
 function App() {
-    return (
-      <>
-      <Header></Header>
-        </> 
-    
-    );
+  return (
+    <>
+      <MainPage></MainPage>
+    </>
+  );
 }
+
 export default App;

@@ -1,0 +1,26 @@
+.progress-control-container{
+  display: flex;
+  width: 540px;
+  height: 72px;
+  align-items: end;
+  margin-top: 30px;
+  justify-content: space-between;
+  .btn-previous{
+    background-color: transparent;
+    width: 174px;
+    height: 46px;
+    border: none;
+    margin-right: auto;
+  }
+  .btn-next {
+      background-color: #F67599;
+      width: 174px;
+      height: 46px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      padding: 10px 20px;
+      
+    }
+}
+
