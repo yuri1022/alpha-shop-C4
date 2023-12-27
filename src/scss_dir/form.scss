@@ -1,8 +1,45 @@
+.form-container{
+  display: flex;
+
+  .form-left,
+  .form-right {
+      flex: 1;
+    }
+
 .form-left{
+  
   .progress-title{
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 30px;
   }
+    .progress-line{
+      &::after {
+          position: absolute;
+          border: 1px solid gray;
+          border-width: 1px 540px 0 5px;
+          content: "";
+        }
+      
+    }
  
+}
+
+.form-right{
+  width: 720px;
+  .cart-container{
+    width: 440px;
+    height: 492px;
+    background-color: #fff;
+    border: 1px solid #F0F0F5;
+    padding: 32px 24px;
+  .cart-title{
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  }
+
+}
+
 }

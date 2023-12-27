@@ -12,6 +12,7 @@
   height: 46px;
   border: none;
   margin-right: auto;
+  cursor: pointer;
 }
 .progress-control-container .btn-next {
   background-color: #F67599;

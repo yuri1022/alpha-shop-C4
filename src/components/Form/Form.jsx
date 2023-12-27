@@ -32,19 +32,27 @@ export default function Form() {
           justifyContent: "center",
         }}
       >
-        <div className="container">
+        <div className="form-container">
           <div className="form-left">
             <div className="step-progress">
               <div className="progress-title">結帳</div>
             <StepProgress shopStage={shopStage} />
-            {renderForm()}
+              {renderForm()}
+             <span className='progress-line'></span>
             </div>                       
             <ProgressControl
               shopStage={shopStage}
               setShopStage={setShopStage}
             />
+           
           </div>
           <div className="form-right">
+            <div className="cart-container">
+              <h5 className="cart-title">購物籃</h5>
+              <div className="cart-item"></div>
+              <div className="cart-freight">運費</div>
+              <div className="cart-total">小計</div>
+              </div>
           </div>
         </div>
       </section>

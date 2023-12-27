@@ -1,9 +1,10 @@
+import '../../scss_dir/stepprogress.scss'
 
 export default function StepProgress(){
-          <div className="step-progress">
 
+  return(
             <section className="progress-container col col-12">
-              <div className="progress-title">結帳</div>
+              
             <span className="progress-group" data-phase="address">
               <span className="progress-icon">
                 <span className="text">1</span>
@@ -26,6 +27,6 @@ export default function StepProgress(){
             </span>
           </section>
 
-          </div>
+          )
           
 }

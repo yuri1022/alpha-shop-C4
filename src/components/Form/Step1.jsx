@@ -36,7 +36,7 @@ export default function Step1() {
               </div>
             </div>
             <div className="col col-12">
-              <div className="input-group">
+              <div className="input-group input-w-lg-2">
                 <div className="input-label">縣市</div>
                 <div className="select-container">
                   <select required>
