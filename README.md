@@ -1,8 +1,36 @@
-# React + Vite
+## alpha-shop-C4
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+it's a e-commerce shopping cart website.
 
-Currently, two official plugins are available:
+## Function
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. you can checkout your item in alpha-shop !
+
+## How to use
+
+1. clone this project：
+   git clone
+
+2. enter the file
+   cd alpha-shop
+
+3. install npm
+   npm install
+
+4. running npm
+   npm run dev
+
+## Built With
+
+html
+javascript
+scss
+react
+
+## Versioning
+
+1.0.0 - enviroment setting and step 1 scene .
+
+## Author
+
+yi-jia Huang
