@@ -19,16 +19,12 @@
 .form-container .form-right {
   width: 720px;
 }
-.form-container .form-right .cart-container {
+.form-container .form-right .form-right-container {
   width: 440px;
   height: 492px;
   background-color: #fff;
   border: 1px solid #F0F0F5;
   padding: 32px 24px;
-}
-.form-container .form-right .cart-container .cart-title {
-  font-size: 18px;
-  font-weight: 700;
 }
 
 /*# sourceMappingURL=form.css.map */
