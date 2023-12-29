@@ -4,6 +4,7 @@ import Step1 from './Step1.jsx';
 import ProgressControl from './ProgressControl';
 import StepProgress from './StepProgress.jsx';
 import  '../../scss_dir/form.scss';
+import Cart from './Cart.jsx';
 import { useState } from "react";
 
 
@@ -48,10 +49,7 @@ export default function Form() {
           </div>
           <div className="form-right">
             <div className="cart-container">
-              <h5 className="cart-title">購物籃</h5>
-              <div className="cart-item"></div>
-              <div className="cart-freight">運費</div>
-              <div className="cart-total">小計</div>
+              <Cart></Cart>
               </div>
           </div>
         </div>
