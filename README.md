@@ -30,6 +30,7 @@ react
 ## Versioning
 
 1.0.0 - enviroment setting and step 1 scene .
+1.0.1 - add cart .
 
 ## Author
 
