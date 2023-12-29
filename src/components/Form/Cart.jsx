@@ -1,4 +1,8 @@
 import '../../scss_dir/cart.scss'
+import MinusIcon from '../../assets/icon/minus.svg';
+import PlusIcon from '../../assets/icon/plus.svg';
+
+
 
 const items = [
   {
@@ -17,6 +21,18 @@ const items = [
   },
 ]
 
+function Total (){
+// 計算總價格
+  const total = items.reduce((accumulator, item) => {
+    return accumulator + item.quantity * item.price;
+  }, 0);
+
+  // 返回總價格
+  return (
+    <span>${total}</span>
+  );
+}
+
 function Items (){
 
   return(
@@ -27,16 +43,12 @@ function Items (){
       <div className="product-name">{item.name}</div>
       <div className="product-control-container">
       <div className="product-control">
-      <svg className="product-action minus">
-      <use xlinkHref="#svg-icon-minus"></use>
-      </svg>
+      <img className="product-control-minus" src={MinusIcon} alt="Minus Icon" /> 
       <span className="product-count">{item.quantity}</span>
-      <svg className="product-action plus">
-      <use xlinkHref="#svg-icon-plus"></use>
-      </svg>
+      <img className="product-control-plus"src={PlusIcon} alt="Plus Icon" />
       </div>
       </div>
-      <div className="price">{item.price}</div>
+      <div className="price">${item.price}</div>
       
       
     </div>
@@ -55,11 +67,11 @@ export default function Cart (){
   
   <section className="cart-info shipping col col-12">
   <div className="text">運費</div>
-  <div className="price"></div>
+  <div className="price">免費</div>
   </section>
   <section className="cart-info total col col-12">
    <div className="text">小計</div>
-  <div className="price"></div>
+  <div className="price"><Total /></div>
   </section>
 
     </section>

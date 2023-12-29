@@ -48,7 +48,7 @@ export default function Form() {
            
           </div>
           <div className="form-right">
-            <div className="cart-container">
+            <div className="form-right-container">
               <Cart></Cart>
               </div>
           </div>
