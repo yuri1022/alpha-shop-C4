@@ -16,9 +16,10 @@
     .progress-line{
       &::after {
           position: absolute;
-          border: 1px solid gray;
+          border: 1px solid var(--grey-light);
           border-width: 1px 540px 0 5px;
           content: "";
+          
         }
       
     }

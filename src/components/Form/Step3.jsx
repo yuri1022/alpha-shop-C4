@@ -4,6 +4,7 @@ import '../../scss_dir/step3.scss';
 export default function Step3() {
 
   return(
+    <div className="step3-content">
        <form className="col col-12" data-phase="credit-card">
               <h3 className="form-title">付款資訊</h3>
               <section className="form-body col col-12">
@@ -24,6 +25,7 @@ export default function Step3() {
                     <div className="input-label">有效期限</div>
                     <input type="text" placeholder="MM/YY" />
                   </div>
+                
                   <div className="input-group input-w-lg-3 input-w-sm-s3">
                     <div className="input-label">CVC / CCV</div>
                     <input type="text" placeholder="123" />
@@ -31,6 +33,7 @@ export default function Step3() {
                 </div>
               </section>
             </form>
+            </div>
 
   )
 

@@ -150,6 +150,7 @@ table {
   --grey-700: #333333;
   --grey-400: #808080;
   --grey-300: #999999;
+  --grey-light:#E6E6EB;
   --site-edge-margin: 15px;
   --main-font-family: "Noto Sans TC", sans-serif;
 }
@@ -1182,7 +1183,7 @@ section.progress-control-container {
 
 section.button-group {
   padding-top: 24px;
-  border-top: 1px solid #E6E6EB;
+  border-top: 1px solid var(--grey-light);
 }
 
 section.button-group button {

@@ -3,14 +3,14 @@ import '../../scss_dir/step2.scss';
 
 export default function Step2() {
   return(
-
+    <div className='step2-content'>
      <form className="col col-12" data-phase="shipping">
               <h3 className="form-title">運送方式</h3>
-              <section className="form-body col col-12">
+              <section className="form-body col col-8">
                 <label className="radio-group col col-12" data-price="0">
                   <input id="shipping-standard" type="radio" name="shipping"  checked/>
                   <div className="radio-info">
-                    <div className="col col-12">
+                    <div className="col col-8">
                       <div className="text">標準運送</div>
                       <div className="price"></div>
                     </div>
@@ -31,5 +31,6 @@ export default function Step2() {
                 </label>
               </section>
             </form>
+            </div>
   )
 }
