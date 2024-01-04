@@ -149,6 +149,7 @@ table {
   --grey-700: #333333;
   --grey-400: #808080;
   --grey-300: #999999;
+  --grey-light:#E6E6EB;
   --site-edge-margin: 15px;
   --main-font-family: "Noto Sans TC", sans-serif;
 }
@@ -1174,7 +1175,7 @@ section.progress-control-container {
 
 section.button-group {
   padding-top: 24px;
-  border-top: 1px solid #E6E6EB;
+  border-top: 1px solid var(--grey-light);
 }
 
 section.button-group button {
@@ -1551,5 +1552,250 @@ body[data-theme=dark] section.progress-control-container section.button-group bu
 }
 
 /*# sourceMappingURL=main.css.map */
+.cart-container .cart-title {
+  font-weight: 700;
+}
+.cart-container .product-container {
+  position: relative;
+  min-width: 392px;
+  height: 102px;
+  padding-left: 5px;
+  margin-bottom: 20px;
+}
+.cart-container .img-container {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 8%;
+}
+.cart-container .product-info .product-name {
+  font-size: 16px;
+  position: absolute;
+  left: 30%;
+  top: 5%;
+}
+.cart-container .product-info .product-control-minus {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  z-index: 1;
+}
+.cart-container .product-info .product-control-plus {
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  z-index: 1;
+}
+.cart-container .product-info .product-count, .cart-container .product-info .product-action {
+  position: absolute;
+  top: 52%;
+  left: 44%;
+}
+.cart-container .product-info .price {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: right;
+  position: absolute;
+  top: 5%;
+  left: 88%;
+  font-weight: 700;
+}
+.cart-container .cart-info {
+  min-width: 392px;
+}
 
-/*# sourceMappingURL=main.css.map */
+.form-container {
+  display: flex;
+}
+.form-container .form-left,
+.form-container .form-right {
+  flex: 1;
+}
+.form-container .form-left .progress-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.form-container .form-left .progress-line::after {
+  position: absolute;
+  border: 1px solid var(--grey-light);
+  border-width: 1px 540px 0 5px;
+  content: "";
+}
+.form-container .form-right {
+  width: 720px;
+}
+.form-container .form-right .form-right-container {
+  width: 440px;
+  height: 492px;
+  background-color: #fff;
+  border: 1px solid #F0F0F5;
+  padding: 32px 24px;
+}
+
+.progress-control-container {
+  display: flex;
+  width: 540px;
+  height: 72px;
+  align-items: end;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.progress-control-container .btn-previous {
+  background-color: transparent;
+  width: 174px;
+  height: 46px;
+  border: none;
+  margin-right: auto;
+  cursor: pointer;
+}
+.progress-control-container .btn-next {
+  background-color: #F67599;
+  width: 174px;
+  height: 46px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.form-title {
+  display: flex;
+  flex: 0 0 100%;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.step-content {
+  width: 540px;
+  height: 288px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.form-body .col {
+  justify-content: space-between;
+}
+.form-body .input-group {
+  margin-top: 24px;
+  margin-right: 10px;
+}
+.form-body .input-group .input-label {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--input-label);
+  margin-bottom: 8px;
+}
+.form-body .input-group .select-container {
+  position: relative;
+  padding-right: 6px;
+  text-align: center;
+}
+.form-body .input-group .select-container::after {
+  position: absolute;
+  top: 50%;
+  right: 1px;
+  transform: translateY(-50%);
+  z-index: -2;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 6px 5px 0 5px;
+  border-color: var(--select-arrow) transparent transparent transparent;
+  content: "";
+}
+.form-body .input-group input,
+.form-body .input-group select {
+  width: 100%;
+  padding: 12px 16px;
+  font-weight: 400;
+  font-size: 12px;
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 16px;
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  background-color: transparent;
+}
+.form-body .input-group input {
+  color: var(--input-text);
+}
+.form-body .input-group select {
+  color: var(--select-true);
+  background-color: transparent;
+  appearance: none;
+  cursor: pointer;
+}
+.form-body .input-group select:required:invalid {
+  color: var(--select-false);
+}
+.form-body .input-group select option {
+  color: red;
+}
+.form-body .input-group select option[value=""][disabled] {
+  display: none;
+}
+
+.step2-content {
+  width: 540px;
+  height: 288px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.step2-content .form-title {
+  display: flex;
+  flex: 0 0 100%;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.step3-content {
+  width: 540px;
+  height: 288px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.step3-content .form-title {
+  display: flex;
+  flex: 0 0 100%;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.progress-container {
+  height: 24px;
+  width: 536px;
+  padding-bottom: 20px;
+  gap: 32px;
+}
+.progress-container .progress-bar {
+  border-width: 1px;
+  border-style: solid;
+}
+.progress-container .text {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+}
+.progress-container .text::after {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid black;
+  display: inline-block;
+  right: 2px;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=style.css.map */
