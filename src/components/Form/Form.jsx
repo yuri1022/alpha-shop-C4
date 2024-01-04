@@ -1,6 +1,6 @@
 import Step1 from './Step1.jsx';
-// import Step2 from './Step2.jsx';
-// import Step3 from './Step3.jsx';
+import Step2 from './Step2.jsx';
+import Step3 from './Step3.jsx';
 import ProgressControl from './ProgressControl';
 import StepProgress from './StepProgress.jsx';
 import  '../../scss_dir/form.scss';
@@ -15,10 +15,10 @@ export default function Form() {
     switch (shopStage) {
       case 1:
         return <Step1></Step1>;
-      // case 2:
-      //   return <Step2></Step2>;
-      // case 3:
-      //   return <Step3></Step3>;
+      case 2:
+        return <Step2></Step2>;
+      case 3:
+        return <Step3></Step3>;
     }
   };
 
