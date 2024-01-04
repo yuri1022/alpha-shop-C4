@@ -3,7 +3,7 @@ import Step2 from './Step2.jsx';
 import Step3 from './Step3.jsx';
 import ProgressControl from './ProgressControl';
 import StepProgress from './StepProgress.jsx';
-import  '../../scss_dir/form.scss';
+import './form.scss'
 import Cart from './Cart.jsx';
 import { useState } from "react";
 

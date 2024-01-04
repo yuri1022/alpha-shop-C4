@@ -1,4 +1,4 @@
-import '../../scss_dir/step1.scss';
+import './step1.scss';
 
 
 const cities = [

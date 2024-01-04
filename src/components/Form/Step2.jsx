@@ -1,4 +1,4 @@
-import '../../scss_dir/step2.scss';
+import './step2.scss';
 
 
 export default function Step2() {

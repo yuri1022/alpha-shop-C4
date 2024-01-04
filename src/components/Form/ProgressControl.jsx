@@ -1,4 +1,4 @@
-import '../../scss_dir/progresscontrol.scss';
+import './progresscontrol.scss';
 import PropTypes from 'prop-types';
 
 

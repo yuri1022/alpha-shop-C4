@@ -1,4 +1,4 @@
-import '../../scss_dir/stepprogress.scss'
+import './stepprogress.scss'
 
 export default function StepProgress(){
 

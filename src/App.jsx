@@ -1,5 +1,6 @@
+
 import MainPage from './components/MainPage.jsx';
-import "./scss_dir/main.scss";
+import './styles/style.scss';
 
 function App() {
   return (

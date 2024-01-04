@@ -1,4 +1,4 @@
-import '../../scss_dir/cart.scss';
+import './cart.scss';
 import MinusIcon from '../../assets/icon/minus.svg';
 import PlusIcon from '../../assets/icon/plus.svg';
 import { useState } from 'react';
