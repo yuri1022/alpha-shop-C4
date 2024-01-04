@@ -1,7 +1,8 @@
-import '../../scss_dir/cart.scss'
+import '../../scss_dir/cart.scss';
 import MinusIcon from '../../assets/icon/minus.svg';
 import PlusIcon from '../../assets/icon/plus.svg';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 
 function Items ({ cart, setCart }){
@@ -46,6 +47,11 @@ function Items ({ cart, setCart }){
 
     )
 }  
+
+
+Total.propTypes = {
+  cart: PropTypes.func.isRequired,
+};
 
 
 function Total ({ cart }){

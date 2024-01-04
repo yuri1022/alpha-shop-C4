@@ -11,6 +11,15 @@ import { useState } from "react";
 export default function Form() {
   const [shopStage, setShopStage] = useState(1);
 
+const handleProgressControlClick = (direction) => {
+  if (direction==='next' && shopStage<3){
+     setShopStage((prevStage) => prevStage + 1);
+  }
+ else if (direction==='previous' && shopStage>1){
+     setShopStage((prevStage) => prevStage - 1);
+  }
+};
+
   const renderForm = () => {
     switch (shopStage) {
       case 1:
@@ -19,6 +28,10 @@ export default function Form() {
         return <Step2></Step2>;
       case 3:
         return <Step3></Step3>;
+
+      default:
+      console.log('Unexpected shopStage:', shopStage);
+      return null;
     }
   };
 
@@ -41,9 +54,8 @@ export default function Form() {
               {renderForm()}
              <span className='progress-line'></span>
             </div>                       
-            <ProgressControl
-              shopStage={shopStage}
-              setShopStage={setShopStage}
+            <ProgressControl shopStage={shopStage}
+              onProgressControlClick={(direction) => handleProgressControlClick(direction)}
             />
            
           </div>
