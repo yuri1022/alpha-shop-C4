@@ -29,8 +29,9 @@ react
 
 ## Versioning
 
-1.0.0 - enviroment setting and step 1 scene .
-1.0.1 - add cart .
+1. 1.0.0 - enviroment setting and step 1 scene .
+2. 1.0.1 - add cart .
+3. 1.0.2 - now you can change step1 to 3 , and adjust cart quantity !
 
 ## Author
 
