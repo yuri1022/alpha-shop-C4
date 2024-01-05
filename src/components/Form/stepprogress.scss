@@ -13,7 +13,7 @@
     font-family: 'Nunito Sans',sans-serif;
     font-weight: 700;
   }
-  .text::after{
+  .text::after {
     position: absolute;
     content: "";
     width: 24px;
@@ -25,4 +25,17 @@
     right: 2px;
     z-index: -1;
     }
+    .text.submit{
+    color: white;
+    }
+    .text.submit::after{
+      background-color: black;
+    }
+
+    .text.checked::after {
+    background-image: url(https://raw.githubusercontent.com/ALPHACamp/alpha-shop/c66f00cf6be37bc83cf2aa4412224cef51282380/public/icons/pg-complete.svg);
+    z-index:2 ;
+    }
+
+
   }

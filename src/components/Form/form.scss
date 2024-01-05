@@ -7,7 +7,13 @@
     }
 
 .form-left{
-  
+  .stage-1 {
+      .progress-control-container {
+        justify-content: end;
+    }
+}
+
+
   .progress-title{
     font-size: 32px;
     font-weight: 700;
@@ -39,4 +45,6 @@
 
   }
 
+
 }
+

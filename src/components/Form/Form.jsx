@@ -49,7 +49,9 @@ const handlePreviousClick = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-        }}
+        }} className={`${
+          shopStage === 1 ? 'stage-1' : shopStage === 2 ? 'stage-2' : shopStage === 3 ? 'stage-3' :''
+        }`}
       >
         <div className="form-container">
           <div className="form-left">
