@@ -31,7 +31,7 @@ const handlePreviousClick = () => {
       case 2:
         return <Step2></Step2>;
       case 3:
-        return <Step3></Step3>;
+        return <CartProvider><Step3></Step3></CartProvider>;
         
 
       default:

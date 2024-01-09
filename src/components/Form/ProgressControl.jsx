@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function Previous({ handlePreviousClick }){
   return (
     <div className="previous">
-      <button className="btn-previous" onClick={() => handlePreviousClick('previous')}>
+      <button type="submit" className="btn-previous" onClick={() => handlePreviousClick('previous')}>
         上一步
       </button>
     </div>
@@ -15,7 +15,7 @@ function Previous({ handlePreviousClick }){
 function NextStep({ handleNextClick, shopStage }) {
   return (
     <div className="next">
-      <button className="btn-next" onClick={() => handleNextClick('next')}>
+      <button type="submit" className="btn-next" onClick={() => handleNextClick('next')}>
         {shopStage === 3 ? '送出訂單' : '下一步'}
        
       </button>
@@ -29,13 +29,13 @@ Previous.propTypes = {
 
 NextStep.propTypes = {
   handleNextClick: PropTypes.func.isRequired,
-  shopStage: PropTypes.func.isRequired,
+  shopStage: PropTypes.number.isRequired,
 };
 
 ProgressControl.propTypes = {
   handlePreviousClick: PropTypes.func.isRequired,
   handleNextClick: PropTypes.func.isRequired,
-  shopStage: PropTypes.func.isRequired,
+  shopStage: PropTypes.number.isRequired,
 };
 
 

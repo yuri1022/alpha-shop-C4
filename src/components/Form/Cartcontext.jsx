@@ -26,8 +26,30 @@ export const CartProvider = ({ children }) => {
     },
   ]);
 
+  const [totalAmount, setTotalAmount] = useState(0);
+  const [cardInfo, setCardInfo] = useState({
+    cardholderName: '',
+    cardNumber: '',
+    expirationDate: '',
+    ccv: '',
+  });
+
+    const updateTotalAmount = () => {
+    // 根據購物車計算總金額的邏輯
+    // 這裡只是個例子，你可能需要根據你的應用邏輯進行修改
+    const total = cart.reduce((accumulator, item) => {
+      return accumulator + item.quantity * item.price;
+    }, 0);
+
+    setTotalAmount(total);
+  };
+
+  const updateCardInfo = (newCardInfo) => {
+    setCardInfo(newCardInfo);
+  };
+
   return (
-    <CartContext.Provider value={{ cart, setCart }}>
+    <CartContext.Provider value={{ cart, setCart,totalAmount,updateTotalAmount,cardInfo,updateCardInfo,}}>
       {children}
     </CartContext.Provider>
   );
