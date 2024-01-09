@@ -1,8 +1,11 @@
 import './cart.scss';
 import MinusIcon from '../../assets/icon/minus.svg';
 import PlusIcon from '../../assets/icon/plus.svg';
-import { useState } from 'react';
 import PropTypes from 'prop-types';
+import { CartContext } from './Cartcontext';
+import { useContext } from 'react';
+
+
 
 
 function Items ({ cart, setCart }){
@@ -48,10 +51,11 @@ function Items ({ cart, setCart }){
     )
 }  
 
-
-Total.propTypes = {
-  cart: PropTypes.func.isRequired,
+Items.propTypes = {
+  cart: PropTypes.array.isRequired,
+  setCart: PropTypes.func.isRequired,
 };
+
 
 
 function Total ({ cart }){
@@ -66,23 +70,13 @@ function Total ({ cart }){
   );
 }
 
+Total.propTypes = {
+  cart: PropTypes.func.isRequired,
+};
+
 export default function Cart (){
-  const [cart, setCart] = useState([
-  {
-    id: '1',
-    name: '貓咪罐罐',
-    img: 'https://picsum.photos/300/300?text=1',
-    price: 100,
-    quantity: 2,
-  },
-  {
-    id: '2',
-    name: '貓咪干干',
-    img: 'https://picsum.photos/300/300?text=2',
-    price: 200,
-    quantity: 1,
-  },
-]);
+  const { cart, setCart } = useContext(CartContext);
+
 
   return(
   <section className="cart-container col col-lg-5 col-sm-12">

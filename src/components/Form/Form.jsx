@@ -6,6 +6,7 @@ import StepProgress from './StepProgress.jsx';
 import './form.scss'
 import Cart from './Cart.jsx';
 import { useState } from "react";
+import { CartProvider } from './Cartcontext.jsx';
 
 
 export default function Form() {
@@ -82,7 +83,9 @@ const handlePreviousClick = () => {
           </div>
           <div className="form-right">
             <div className="form-right-container">
-              <Cart></Cart>
+                    <CartProvider>
+        <Cart />
+      </CartProvider>
               </div>
           </div>
         </div>
