@@ -1,7 +1,11 @@
 import './step3.scss';
 import { CartContext } from './Cartcontext';
 import { useState , useContext } from 'react';
+import PropTypes from 'prop-types';
 
+Step3.propTypes = {
+  handleFormSubmit:PropTypes.func.isRequired,
+};
 
 export default function Step3() {
     const { cardInfo, updateCardInfo } = useContext(CartContext);
@@ -26,6 +30,8 @@ export default function Step3() {
     console.log('Card Number:', cardNumber);
     console.log('Expiry Date:', expirationDate);
     console.log('CVC:', ccv);
+
+     console.log('Submitting form...');
     
     updateCardInfo(newCardInfo);
   };
@@ -33,6 +39,7 @@ export default function Step3() {
 
 
   return(
+   
     <div className="step3-content">
        <form className="col col-12" data-phase="credit-card" onSubmit={handleFormSubmit}>
               <h3 className="form-title">付款資訊</h3>
@@ -63,8 +70,9 @@ export default function Step3() {
               </section>
             </form>
             </div>
-
+          
   )
  
 
 }
+

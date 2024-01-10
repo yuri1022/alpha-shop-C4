@@ -35,8 +35,6 @@ export const CartProvider = ({ children }) => {
   });
 
     const updateTotalAmount = () => {
-    // 根據購物車計算總金額的邏輯
-    // 這裡只是個例子，你可能需要根據你的應用邏輯進行修改
     const total = cart.reduce((accumulator, item) => {
       return accumulator + item.quantity * item.price;
     }, 0);

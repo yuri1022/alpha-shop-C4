@@ -5,12 +5,14 @@ import ProgressControl from './ProgressControl';
 import StepProgress from './StepProgress.jsx';
 import './form.scss'
 import Cart from './Cart.jsx';
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { CartProvider } from './Cartcontext.jsx';
-
+import { CartContext } from './Cartcontext.jsx'; 
 
 export default function Form() {
+  const { cardInfo } = useContext(CartContext);
   const [shopStage, setShopStage] = useState(1);
+
 
 const handleNextClick = () => {
   if (shopStage < 3) {
@@ -24,6 +26,12 @@ const handlePreviousClick = () => {
   }
 };
 
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    // 執行表單提交邏輯，使用 cardInfo 中的數據
+    console.log('Form data submitted:', cardInfo);
+  };
+
   const renderForm = () => {
     switch (shopStage) {
       case 1:
@@ -31,9 +39,8 @@ const handlePreviousClick = () => {
       case 2:
         return <Step2></Step2>;
       case 3:
-        return <CartProvider><Step3></Step3></CartProvider>;
+        return <CartProvider><Step3 handleFormSubmit={handleFormSubmit}/></CartProvider>;
         
-
       default:
       console.log('Unexpected shopStage:', shopStage);
       return null;
@@ -78,12 +85,14 @@ const handlePreviousClick = () => {
       handleNextClick();
     }
   }}
+  handleFormSubmit={handleFormSubmit}  // 確保 handleFormSubmit 被正確傳遞
+  cardInfo={cardInfo}
 />
            
           </div>
           <div className="form-right">
             <div className="form-right-container">
-                    <CartProvider>
+        <CartProvider>
         <Cart />
       </CartProvider>
               </div>
@@ -93,3 +102,4 @@ const handlePreviousClick = () => {
     </>
   );
 }
+
