@@ -71,7 +71,7 @@ function Total ({ cart }){
 }
 
 Total.propTypes = {
-  cart: PropTypes.func.isRequired,
+  cart: PropTypes.array.isRequired,
 };
 
 export default function Cart (){

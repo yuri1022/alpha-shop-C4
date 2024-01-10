@@ -52,10 +52,8 @@ export default function Step1() {
               <div className="input-group input-w-lg-2 input-w-sm-s1">
                 <div className="input-label">稱謂</div>
                 <div className="select-container">
-                  <select>
-                    <option value="mr" selected>
-                      先生
-                    </option>
+                  <select defaultValue="mr">
+                    <option value="mr"> 先生 </option>
                     <option value="ms">女士</option>
                     <option value="mx">不明</option>
                   </select>
@@ -80,7 +78,7 @@ export default function Step1() {
               <div className="input-group input-w-lg-2">
                 <div className="input-label">縣市</div>
                 <div className="select-container">
-                  <select required>
+                  <select defaultValue="KLU" required>
                     <option value>請選擇縣市</option>
                     <City />
                   </select>
