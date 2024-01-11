@@ -8,8 +8,7 @@ Step3.propTypes = {
 };
 
 export default function Step3() {
-    const { cardInfo, updateCardInfo } = useContext(CartContext);
-
+  const { cardInfo, updateCardInfo } = useContext(CartContext);
   const [cardholderName, setCardholderName] = useState(cardInfo.cardholderName || '');
   const [cardNumber, setCardNumber] = useState(cardInfo.cardNumber || '');
   const [expirationDate, setExpirationDate] = useState(cardInfo.expirationDate || '');
@@ -22,16 +21,12 @@ export default function Step3() {
     const newCardInfo = {
       cardholderName,
       cardNumber,
-      expirationDate,
+      expirationDate,   
       ccv,
     };
 
-    console.log('Card Holder:', cardholderName);
-    console.log('Card Number:', cardNumber);
-    console.log('Expiry Date:', expirationDate);
-    console.log('CVC:', ccv);
-
-     console.log('Submitting form...');
+        // 執行表單提交邏輯，使用 cardInfo 中的數據
+    console.log('Form data submitted:', cardInfo);
     
     updateCardInfo(newCardInfo);
   };

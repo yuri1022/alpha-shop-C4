@@ -10,7 +10,7 @@ import { CartProvider } from './Cartcontext.jsx';
 import { CartContext } from './Cartcontext.jsx'; 
 
 export default function Form() {
-  const { cardInfo } = useContext(CartContext);
+  const { cardInfo,updateCardInfo } = useContext(CartContext);
   const [shopStage, setShopStage] = useState(1);
 
 
@@ -28,8 +28,8 @@ const handlePreviousClick = () => {
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    // 執行表單提交邏輯，使用 cardInfo 中的數據
     console.log('Form data submitted:', cardInfo);
+
   };
 
   const renderForm = () => {
@@ -39,7 +39,10 @@ const handlePreviousClick = () => {
       case 2:
         return <Step2></Step2>;
       case 3:
-        return <CartProvider><Step3 handleFormSubmit={handleFormSubmit}/></CartProvider>;
+        return <Step3 handleFormSubmit={handleFormSubmit}
+        cardInfo={cardInfo}
+        updateCardInfo={updateCardInfo}  // 確保 updateCardInfo 被傳遞
+       />;
         
       default:
       console.log('Unexpected shopStage:', shopStage);
