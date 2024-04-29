@@ -59,17 +59,17 @@ export default function Step1() {
                   </select>
                 </div>
               </div>
-              <div className="input-group input-w-lg-4 input-w-sm-s2">
+              <div className="input-group col col-6 col-md-8 col-lg-8">
                 <div className="input-label">姓名</div>
                 <input type="text" placeholder="請輸入姓名" />
               </div>
             </div>
             <div className="col col-12">
-              <div className="input-group input-w-lg-3 input-w-sm-full">
+              <div className="input-group col col-12 col-md-6 col-lg-6">
                 <div className="input-label">電話</div>
                 <input type="tel" placeholder="請輸入行動電話" />
               </div>
-              <div className="input-group input-w-lg-3 input-w-sm-full">
+              <div className="input-group col col-12 col-md-6 col-lg-6">
                 <div className="input-label">Email</div>
                 <input type="email" placeholder="請輸入電子郵件" />
               </div>
@@ -85,7 +85,7 @@ export default function Step1() {
                 </div>
               </div>
 
-              <div className="input-group input-w-lg-4 input-w-sm-full">
+              <div className="input-group col col-6 col-md-8 col-lg-8">
                 <div className="input-label">地址</div>
                 <input type="text" placeholder="請輸入地址" />
               </div>

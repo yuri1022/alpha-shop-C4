@@ -1,45 +1,58 @@
+@media screen and (max-width:480px) {
+  .form-container {
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (min-width:481px) {
+  .form-container {
+    flex-direction: row;
+  }
+
+}
+
+
+
 .form-container{
   display: flex;
 
-  .form-left,
-  .form-right {
-      flex: 1;
-    }
-
 .form-left{
+  padding:2rem;
   .stage-1 {
       .progress-control-container {
         justify-content: end;
     }
 }
 
-
   .progress-title{
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 30px;
   }
-    .progress-line{
-      &::after {
-          position: absolute;
-          border: 1px solid var(--grey-light);
-          border-width: 1px 540px 0 5px;
-          content: "";
-          
-        }
-      
-    }
+.progress-line {
+  position: relative;
+  width: 100%;
+}
+
+.progress-line::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 1px solid var(--grey-light);
+  border-width: 1px 0 0 5px;
+  content: "";
+}
  
 }
 
 .form-right{
-  width: 720px;
+  width: 100%;
+  padding-top: 3rem;
   .form-right-container{
-  width: 440px;
-    height: 492px;
     background-color: #fff;
     border: 1px solid #F0F0F5;
-    padding: 32px 24px;
+    padding: 2rem 1.5rem;
   }
 
 
@@ -47,4 +60,6 @@
 
 
 }
+
+
 

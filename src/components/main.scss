@@ -521,7 +521,6 @@ header.site-header {
 header.site-header .header-container {
   display: flex;
   position: relative;
-  max-width: 1100px;
   height: var(--header-height);
   background-color: inherit;
   align-items: stretch;
@@ -843,7 +842,6 @@ section.progress-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 48px;
 }
 
 section.progress-container .progress-bar {
@@ -1014,7 +1012,6 @@ section.register-container[data-phase="3"]~section.progress-control-container .b
 
 section.form-container {
   display: flex;
-  margin-top: 64px;
 }
 
 section.form-container h3.form-title {
@@ -1227,9 +1224,6 @@ section.button-group button.next>object {
 }
 
 @media screen and (max-width: 749.5px) {
-  section.progress-container {
-    margin-top: 24px;
-  }
 
   section.progress-container .progress-group .progress-icon {
     width: 32px;
@@ -1245,10 +1239,7 @@ section.button-group button.next>object {
     display: none;
   }
 
-  section.form-container {
-    margin-top: 24px;
-  }
-
+  
   section.progress-control-container {
     position: relative;
     margin-top: 24px;

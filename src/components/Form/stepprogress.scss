@@ -1,28 +1,26 @@
 .progress-container{
-  height: 24px;
-  width: 536px;
-  padding-bottom: 20px;
-  gap: 32px;
+  height: 1.5rem;
+  width: 100%;
+  padding: 2rem 1rem;
   .progress-bar{
    border-width: 1px;
     border-style: solid;
   }
   .text{
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 0.75rem;
+    line-height: 1.5rem !important;
     font-family: 'Nunito Sans',sans-serif;
     font-weight: 700;
   }
   .text::after {
     position: absolute;
     content: "";
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 50%;
     background-color: transparent;
     border: 1px solid black;
-    display: inline-block;
-    right: 2px;
+    right: 3px;
     z-index: -1;
     }
     .text.submit{

@@ -56,7 +56,6 @@ const handlePreviousClick = () => {
       <section
         id="form"
         style={{
-          height: "100vh",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -65,8 +64,8 @@ const handlePreviousClick = () => {
         }`}
       >
         <div className="form-container">
-          <div className="form-left">
-            <div className="step-progress">
+          <div className="form-left col col-12 col-md-6 col-lg-6" style={{justifyContent:'flex-end'}}>
+            <div className="step-progress col col-12 col-md-8 col-lg-8">
               <div className="progress-title">結帳</div>
             <StepProgress shopStage={shopStage} />
               {renderForm()}
@@ -88,13 +87,13 @@ const handlePreviousClick = () => {
       handleNextClick();
     }
   }}
-  handleFormSubmit={handleFormSubmit}  // 確保 handleFormSubmit 被正確傳遞
+  handleFormSubmit={handleFormSubmit}  
   cardInfo={cardInfo}
 />
            
           </div>
-          <div className="form-right">
-            <div className="form-right-container">
+          <div className="form-right col col-12 col-md-6 col-lg-6">
+            <div className="form-right-container col col-12 col-md-6 col-lg-6">
         <CartProvider>
         <Cart />
       </CartProvider>

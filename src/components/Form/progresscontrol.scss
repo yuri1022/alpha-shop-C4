@@ -1,16 +1,16 @@
 .progress-control-container{
   display: flex;
-  width: 540px;
+  width: 100%;
   height: 72px;
   align-items: end;
-  margin-top: 30px;
-  justify-content: space-between;
+  margin-top: 1.5rem;
+  justify-content: space-around;
   .btn-previous{
     background-color: transparent;
     width: 174px;
     height: 46px;
     border: none;
-    margin-right: auto;
+    padding-right: 1.5rem;
     cursor: pointer;
   }
   .btn-next {
@@ -21,7 +21,10 @@
       cursor: pointer;
       border-radius: 5px;
       padding: 10px 20px;
-      
+      padding-right: 1.5rem;
     }
 }
+
+
+
 
