@@ -2,9 +2,9 @@
 
 [專案頁面連結](https://yuri1022.github.io/alpha-shop-C4/)
 
-![專案桌機版畫面](src/assests/Alphashop-screenshot-pc.png)
+![專案桌機版畫面](src/assets/Alphashop-screenshot-pc.png)
 
-![專案行動版畫面](src/assests/Alphashop-screenshot-mb.png)
+![專案行動版畫面](src/assets/Alphashop-screenshot-mb.png)
 
 ## 專案介紹
 
