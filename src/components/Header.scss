@@ -4,9 +4,7 @@
      background-color: #fff;
     width: 100%;
   }
-  .navbar-menu{
-    display: flex;
-  }
+
   .nav-list .site-menu-list{
       width: 100%;
       .nav-item {
@@ -23,19 +21,39 @@
 
 }
 
+@media screen and (min-width:481px) {
+
+  .navbar-menu,
+  .navbar-menu .pc {
+    display: none;
+  }
+
+  .navbar-menu.active {
+    display: block;
+    background-color: #fff;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width:480px) {
-  .navbar-menu {
+  .navbar-menu,
+  .pc-navbar-menu {
       display: none;
     }
   
     .navbar-menu.active {
       display: block;
-      color: red;
       background-color: #fff;
-      width: 200px;
-      height: 200px;
+      width: 80%;
+      height: 100%;
       position: absolute;
-      top:20px;
-      left: 60px;
+      top:0;
+      left: 0;
+      opacity: 1;
     }
   }

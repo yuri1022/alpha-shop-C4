@@ -56,7 +56,7 @@ ProgressControl.propTypes = {
 
 export default function ProgressControl({ shopStage,handlePreviousClick,handleNextClick,handleFormSubmit,cardInfo}) {
   return (
-    <div className='progress-control-container'>
+    <div className='progress-control-container col col-12 col-md-8 col-lg-8'>
       {shopStage > 1 &&<Previous handlePreviousClick={handlePreviousClick} />}
       <NextStep handleNextClick={handleNextClick} 
       shopStage={shopStage} 

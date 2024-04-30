@@ -633,7 +633,6 @@ label.burger-container {
     display: block;
     margin-top: var(--header-height);
     opacity: 0;
-    transform: scale(1, 0);
     transform-origin: top;
     transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out, opacity 0.3s;
   }
@@ -691,7 +690,6 @@ label.burger-container {
 
   input#navbar-toggle:checked~nav.navbar-menu {
     opacity: 1;
-    transform: scale(1);
   }
 }
 
@@ -860,7 +858,6 @@ section.progress-container .progress-group .progress-icon {
   display: inline-block;
   position: relative;
   width: 27px;
-  height: 27px;
   margin-right: 8px;
   border-radius: 50%;
 }
@@ -1227,7 +1224,6 @@ section.button-group button.next>object {
 
   section.progress-container .progress-group .progress-icon {
     width: 32px;
-    height: 32px;
     margin-right: 0px;
   }
 
