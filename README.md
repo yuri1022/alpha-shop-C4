@@ -1,14 +1,19 @@
 # Alpha-Shop
 
-[專案頁面連結](https://yuri1022.github.io/alpha-shop-C4/)
-
-![專案桌機版畫面](src/assets/Alphashop-screenshot-pc.png)
-
-![專案行動版畫面](src/assets/Alphashop-screenshot-mb.png)
-
 ## 專案介紹
 
-此專案為 Alpha Camp 學期挑戰，使用 React 打造出 Alpha Shop 一頁式購物車介面。介面以 480px 為分界點，共分為五大 Component：Navbar、Stepper、Form、Cart、Footer。
+此專案為 Alpha Camp 學期挑戰，使用 React 打造出 Alpha Shop RWD一頁式購物車介面。
+介面以 480px 為分界點，共分為五大 Component：Navbar、Stepper、Form、Cart、Footer。
+
+[專案頁面連結](https://yuri1022.github.io/alpha-shop-C4/)
+
+專案桌機版畫面預覽：
+![專案桌機版畫面](src/assets/Alphashop-screenshot-pc.png)
+
+專案手機版畫面預覽：
+![專案行動版畫面](src/assets/Alphashop-screenshot-mb.png)
+
+
 
 ## 功能描述
 
